@@ -1,0 +1,93 @@
+*{
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+.one {
+	width: 800px;
+	background: green;
+	margin: 20px;
+	
+}
+.one:active {
+	color: red;
+	}
+
+.one:hover {
+	background: yellow;
+}
+
+.two {
+	width: 800px;
+	background: purple;
+	margin: 20px;
+}
+
+.two:active{
+color: gold;
+}
+.two:hover {
+	background: brown;
+}
+ input {
+	width: 50%;
+	box-shadow: none;
+	outline: none;
+	margin: 20px;
+	  
+}
+ input:focus {
+	
+	border: 1px solid green;
+	font-size: 12px;
+	box-shadow: none;
+}
+
+
+p { 
+	width: 800px;
+	font-family: arial, sans-serif;
+	font-size: 14px;
+	margin: 20px;
+ }
+ .child p:nth-child(even) {
+ 	width:800px;
+ 	background: grey;
+ }
+ 
+ .letter p::first-letter {
+	font-family: georgia;
+    font-size: 2em;
+    color: red;
+}
+
+ .con p::after {
+ 	content: "* * * * *";
+ 	display: block;
+ 	width: 100%;
+ 	text-align: center;
+ }
+ 
+ .con p::before {
+ 	content: '\2602';
+ 	display: block;
+ 	width: 100%;
+ 	text-align: left;
+ }
+	
+ .rectangle {
+ 	width: 100px;
+ 	height: 50px;
+ 	background: black;
+    position: relative;
+ 	margin: 100px;
+ }
+ .rectangle::before {
+ 	content: '';
+ 	position: absolute;
+ 	left: -30px;
+    top: 15px;
+ 	border: 10px solid transparent;
+ 	border-right: 20px solid black;
+
+ }
